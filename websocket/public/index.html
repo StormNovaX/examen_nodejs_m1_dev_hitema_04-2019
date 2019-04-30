@@ -16,7 +16,7 @@
         </div>
         <script>
             let user;
-            let mySocket
+            let mySocket;
             function connect() {
                 mySocket= new WebSocket('ws://localhost:3001');
                 mySocket.onmessage = (messageEvent) => {

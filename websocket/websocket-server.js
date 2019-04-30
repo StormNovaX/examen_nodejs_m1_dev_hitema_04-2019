@@ -1,6 +1,6 @@
-const WebSocket = require('ws')
+const WebSocket = require('ws');
 const webSocketServer = new WebSocket.Server({ port: 3001 });
-  
+
 webSocketServer.on('connection', webSocket => {
     webSocket.onmessage = messageEvent => {
         const message = messageEvent.data;
